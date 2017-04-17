@@ -1,0 +1,81 @@
+header 
+{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	float: center;
+	text-align: center;
+	border: 5px solid white;
+}
+#CNU_header_Title
+{
+	font-size: 2.7em;
+	font-family:Times New Roman;
+	text-align: center;
+	color: white;
+}
+body
+{
+	background: #ff6600; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left bottom, #002966, #ff6600); /* For Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient(top right, #002966, #ff6600); /* For Firefox 3.6 to 15 */
+   
+}
+#loginBox
+{
+	height: 350px;
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+	float: center;
+	text-align: center;
+	background-color: #c0b481;
+	border: 5px solid white;
+}
+#myForm
+{
+	float: center;
+	text-align: center;
+}
+#userName
+{
+	text-align: center;
+	font-size: 30px;
+	position: top center;
+	float: center;
+}
+#email
+{
+	float: center;
+	text-align: center;
+	font-size: 30px;
+	position: top center;
+	margin-left: 11%;
+}
+#passwd
+{
+	float: center;
+	text-align: center;
+	font-size: 30px;
+	position: top center;
+	margin-left: 3%;
+}
+#cpwrd
+{
+		float: center;
+	text-align: center;
+	font-size: 30px;
+	position: top center;
+	margin-right: 18%;
+}
+#submit
+{
+	float: center;
+		font-size: 30px;
+}
+#submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
