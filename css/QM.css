@@ -1,0 +1,255 @@
+body
+{
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+header nav
+{
+  display: block;
+}
+.LeftTopBox
+{
+  width: 58%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  float: left;
+  text-align: center;
+  border: 8px solid black;
+  background-color: white;
+}
+.RightTopBox
+{
+  d
+  width: 40%;
+  text-align: center;
+  border: 8px solid black;
+  background-color: white;
+}
+div.scrollmenu {
+    background-color: #333;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+#header_Title
+{
+  font-size: 2.2em;
+  font-family:Times New Roman;
+  text-align: center;
+  color: BLACK;
+}
+#sub_Title1
+{
+  font-size: 1.3em;
+  font-family:Times New Roman;
+  text-align: center;
+  color: BLACK;
+  font-style: italic;
+}
+.dropbtn {
+  display: inline-block;
+  background: #333;
+   color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    text-decoration: none;  
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: gray;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+        overflow: scroll;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.show {display:block;}
+h1, h2 { text-align:center; }
+h2 {
+  position:absolute;
+  bottom: 20px;
+  color:#fff;
+  text-shadow:0 0 10px rgba(0, 0, 0, 0.75);
+  display:none;
+  font: 13px/1.5 helvetica, arial, san-serif;
+}
+
+#content {
+    overflow: hidden;
+}
+#left{
+    border: solid;
+}
+#left h3 {
+    background: -moz-linear-gradient(#ffffff, #F6F6F6); /* FF 3.6+ */  
+    background: -ms-linear-gradient(#ffffff, #F6F6F6); /* IE10 */  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #F6F6F6)); /* Safari 4+, Chrome 2+ */  
+    background: -webkit-linear-gradient(#ffffff, #F6F6F6); /* Safari 5.1+, Chrome 10+ */  
+    background: -o-linear-gradient(#ffffff, #F6F6F6); /* Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F6F6F6'); /* IE6 & IE7 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F6F6F6')"; /* IE8+ */  
+    background: linear-gradient(#ffffff, #F6F6F6); /* the standard */ 
+
+    border-bottom: 1px solid #E0E0E0;
+    color: #3C3C3C;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 11px 0 12px 20px;
+    text-transform: uppercase;
+}
+#content ul
+
+p { margin:0;
+ }
+
+[draggable=true] {
+  cursor: auto;
+}
+#products {
+  float:left;
+  list-style:none;
+  width:60%;
+  padding:0;
+}
+#products li {
+  display:inline-block;
+    position:relative;
+}
+.item {
+  display: block;
+  width:200px;
+  height:280px;
+  margin:30px;
+  border:3px solid #494949;
+  text-decoration:none;
+  color: #000;
+  text-align:center;
+  overflow: hidden;
+  background-color: white;
+
+}
+.item img {
+  border: 1px solid;
+  margin-left:10px auto;
+  margin-right:10px auto;;
+  margin-top:10px auto;
+  width:150px;
+  height:150px;
+}
+.item div {
+  background:rgb(0, 0, 0);
+  background: rgba(0, 0, 1, 0.5);
+  color:White;
+  display:none;
+  text-align:center;
+}
+#cart {
+  float:right;
+  background-color:white;
+  width:35%;
+  margin-top: 2%;
+  margin-right: 1%;
+  height:50%;
+  border: dotted black;
+  overflow: auto;
+}
+#cart ul {
+  padding:0;
+}
+#cart li {
+  list-style:none;
+  border-bottom:1px solid #494949;
+  padding:5px;
+}
+#cart .quantity {
+  font-weight:bold;
+  padding-right:10px;
+  margin-right:10px;
+  border-right:1px solid #494949;
+  display:inline-block;
+  width:15px;
+  text-align:right;
+}
+#cart .price {
+  float:right;
+}
+#total {
+  float:right;
+}
+.productclear
+{
+  border: 10px solid black;
+  width: 50%;
+  margin-top: 5%;
+  position:center;
+}
+.productclear h4
+{
+   text-align: center;
+}
+.opBox
+{
+  width:250px;
+  height:300px;
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top: auto;
+  float: left;
+}
+.TopBox
+{
+  d
+  width: 40%;
+  text-align: center;
+  border: 8px solid black;
+  background-color: white;
+}
+summary {
+  cursor: pointer;
+  font-size: 12pt;
+  outline: 0;
+  text-align: center; }
+
+#dk
+{
+  border: 1px solid;
+  width:180px;
+  height:180px;
+}
+#goo
+{
+  text-align: left;
+}
