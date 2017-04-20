@@ -111,7 +111,10 @@
 
     <canvas id="myCanvas" width="960" height="640"></canvas>
 
-    <button type="button">Play/Pause</button>
+    <button id="play" type="button">Play</button>
+    <button id="pause" type="button">Pause</button>
+
+
 
     <div class="chat_wrapper">
     <div class="message_box" id="message_box"></div>
@@ -156,6 +159,22 @@
         var brickOffsetLeft = 10;
         var score = 0;
         var lives = 3;
+
+        document.getElementById("pause").addEventListener("click", pause);
+        function pause(e)
+        {
+            dx = 0;
+            dy = 0;
+            console.log("paused");
+        }
+
+        document.getElementById("play").addEventListener("click", play);
+        function play(e)
+        {
+            dx = 5;
+            dy = -5;
+            console.log("play");
+        }
 
     $(document).ready(function(){
         //create a new WebSocket object.
@@ -269,6 +288,9 @@
                 paddleX = relativeX - paddleWidth/2;
             }
         }
+
+        
+
         function collisionDetection() {
             for(c=0; c<brickColumnCount; c++) {
                 for(r=0; r<brickRowCount; r++) {
