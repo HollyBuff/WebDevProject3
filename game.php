@@ -8,8 +8,8 @@
     else 
     if ($_SESSION["pass_userName"] != null)
     {
-        echo "<script>alert('Welcome Back,".$_SESSION["pass_userName"]."');</script>";
-        echo 'Welcome Back  ', $_SESSION["pass_userName"];
+        //echo "<script>alert('Welcome Back, ".$_SESSION["pass_userName"]."');</script>";
+        echo '<h2>Welcome Back, ' . $_SESSION["pass_userName"] . '</h2>';
         $name = $_SESSION["pass_userName"];
     }
 
@@ -20,12 +20,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
-    canvas { background: #00FFFF; display: block; margin: 0px; }
+    canvas { background: #00FFFF; display: block; margin: auto;}
     body {
         font: 12px arial;
         color: #222;
         text-align: center;
         padding: 35px;
+    }
+
+    h2 {
+        font-family: Helvetica;
     }
 
     .panel{
@@ -93,6 +97,11 @@
         
                     
     }
+
+    button {
+        margin: 10px;
+        padding: 10px;
+    }
 </style>
 
 <title>Chat - Customer Module</title>
@@ -101,6 +110,7 @@
 <body>
 
     <canvas id="myCanvas" width="960" height="640"></canvas>
+
     <button type="button">Play/Pause</button>
 
     <div class="chat_wrapper">
