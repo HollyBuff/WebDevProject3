@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost'; //host
+$host = 'ec2-54-213-215-136.us-west-2.compute.amazonaws.com'; //host
 $port = '9000'; //port
 $null = NULL; //null var
 

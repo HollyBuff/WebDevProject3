@@ -20,12 +20,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
-    canvas { background: #00FFFF; display: block; margin: auto;}
+    canvas { background: #00FFFF; display: block; margin: auto; border: 6px solid #3B5998;}
     body {
         font: 12px arial;
         color: #222;
         text-align: center;
         padding: 35px;
+
     }
 
     h1 {
@@ -107,7 +108,7 @@
 <title>Chat - Customer Module</title>
 </head>
 
-<body>
+<body bgcolor="#F5FFFA">
 
     <canvas id="myCanvas" width="960" height="640"></canvas>
 
@@ -179,7 +180,7 @@
 
     $(document).ready(function(){
         //create a new WebSocket object.
-        var wsUri = "ws://localhost:9000/demo/server.php";  
+        var wsUri = "ws://ec2-54-213-215-136.us-west-2.compute.amazonaws.com:9000/demo/server.php";  
         websocket = new WebSocket(wsUri); 
         
         websocket.onopen = function(ev) { // connection is open 

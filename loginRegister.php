@@ -18,9 +18,9 @@
 </form>
 	<form action="loginProcess.php" method="post" id="myForm">
 
-		<p id="userName">QuadcopterEx_Username: <input title="Username must not be blank and contain only letters, numbers and underscores." type="text" required pattern="\w+" name="myUsername"></p>
+		<p id="userName">Username: <input title="Username must not be blank and contain only letters, numbers and underscores." type="text" required pattern="\w+" name="myUsername"></p>
 
-		<p id="passwd">QuadcopterEx_Password: <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="myPassword"></p>
+		<p id="passwd">Password: <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="myPassword"></p>
 
 		<p><input type="submit" id="submit" value="Login"></p>
 	</form>
