@@ -9,7 +9,7 @@
     if ($_SESSION["pass_userName"] != null)
     {
         //echo "<script>alert('Welcome Back, ".$_SESSION["pass_userName"]."');</script>";
-        echo '<h2>Welcome Back, ' . $_SESSION["pass_userName"] . '</h2>';
+        echo '<h1>Welcome Back, ' . $_SESSION["pass_userName"] . '</h1>';
         $name = $_SESSION["pass_userName"];
     }
 
@@ -28,7 +28,7 @@
         padding: 35px;
     }
 
-    h2 {
+    h1 {
         font-family: Helvetica;
     }
 
@@ -145,6 +145,7 @@
         var y = canvas.height-70; // start off position
         var dx = 5; // control gravity / dropping angel and speed
         var dy = -5;// control gravity / dropping angel and speed
+        var tempdy = dy;
         var paddleHeight = 10;
         var paddleWidth = 75;
         var paddleX = (canvas.width-paddleWidth)/2;//space outside the paddle in half
@@ -172,7 +173,7 @@
         function play(e)
         {
             dx = 5;
-            dy = -5;
+            dy = tempdy;
             console.log("play");
         }
 
@@ -298,12 +299,15 @@
                     if(b.status == 1) {
                         if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) { // if hit the brick 
                             dy = -dy; // control the ball to go the oposit direction
+                            tempdy = dy;
                             b.status = 0;
                             score++;
                             sendScore();
                             if(score == brickRowCount*brickColumnCount) { //every time you hit a brick, your score increase by 1.
-                                alert("YOU WIN, CONGRATS!");
-                                document.location.reload();
+                                //alert("YOU WIN, CONGRATS!");
+
+                                drawBricks();
+                                //document.location.reload();
                             }
                         }
                     }
