@@ -161,6 +161,7 @@
         var brickOffsetLeft = 10;
         var score = 0;
         var lives = 3;
+        var level = 1;
 
         document.getElementById("pause").addEventListener("click", pause);
         function pause(e)
@@ -301,15 +302,22 @@
                         if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) { // if hit the brick 
                             dy = -dy; // control the ball to go the oposit direction
                             tempdy = dy;
-                            b.status = 0;
-                            score++;
-                            sendScore();
-                            if(score == brickRowCount*brickColumnCount) { //every time you hit a brick, your score increase by 1.
-                                //alert("YOU WIN, CONGRATS!");
-
-                                drawBricks();
-                                //document.location.reload();
+                            b.live --;
+                            
+                            if (b.lives == 0)
+                            {
+                            	b.status = 0;
+	                            score++;
+	                            sendScore();
+	                            if(score == brickRowCount*brickColumnCount) { //every time you hit a brick, your score increase by 1.
+	                                //alert("YOU WIN, CONGRATS!");
+	                                level ++;
+	                                drawBricks();
+	                                //document.location.reload();
+	                            }
                             }
+
+                            
                         }
                     }
                 }
@@ -338,6 +346,7 @@
                         var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
                         bricks[c][r].x = brickX;
                         bricks[c][r].y = brickY;
+                        bricks[c][r].live = level;
                         ctx.beginPath();
                         ctx.rect(brickX, brickY, brickWidth, brickHeight);
                         ctx.fillStyle = "#A52A2A";
